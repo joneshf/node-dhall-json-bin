@@ -1,0 +1,26 @@
+{
+  "name": "dhall-json",
+  "version": "1.0.8-joneshf-testing-osx",
+  "description": "NPM package for dhall-json",
+  "bin": {
+    "dhall-to-json": "bin/dhall-to-json",
+    "dhall-to-yaml": "bin/dhall-to-yaml"
+  },
+  "scripts": {
+    "postinstall": "node postinstall.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joneshf/node-dhall-json-bin.git"
+  },
+  "keywords": [],
+  "author": "Hardy Jones <jones3.hardy@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joneshf/node-dhall-json-bin/issues"
+  },
+  "homepage": "https://github.com/joneshf/node-dhall-json-bin#readme",
+  "dependencies": {
+    "bin-wrapper": "^3.0.2"
+  }
+}

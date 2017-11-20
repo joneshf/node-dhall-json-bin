@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo 'dhall-to-json did not install properly. Please report this to https://github.com/joneshf/node-dhall-json-bin/issues'
+exit 1
