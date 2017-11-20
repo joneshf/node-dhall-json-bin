@@ -1,4 +1,11 @@
-#!/bin/bash
+#!/usr/bin/env node
+'use strict';
 
-echo 'dhall-to-json did not install properly. Please report this to https://github.com/joneshf/node-dhall-json-bin/issues'
-exit 1
+var childProcess = require('child_process');
+var path = require('path');
+var input = process.argv.slice(2);
+
+var dhallToJSON = path.join(__dirname, '..', 'vendor', 'dhall-to-json');
+
+childProcess.spawn(dhallToJSON, input, {stdio: 'inherit'})
+  .on('exit', process.exit);

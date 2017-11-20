@@ -6,9 +6,11 @@ var packageJSON = require('./package.json');
 
 var base = 'https://github.com/joneshf/dhall-json/releases/download/';
 
-new BinWrapper()
+var binary = new BinWrapper()
   .src(base + packageJSON.version + '/osx.tar.gz', 'darwin')
   .src(base + packageJSON.version + '/linux.tar.gz', 'linux')
-  .dest(path.join('bin'))
-  .use('')
-  .run(function() {});
+  .dest(path.join(__dirname, 'vendor'));
+
+binary.use('dhall-to-json').run(function() {
+  binary.use('dhall-to-yaml').run(function() {});
+});
