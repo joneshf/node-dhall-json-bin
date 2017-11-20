@@ -1,6 +1,6 @@
 {
   "name": "dhall-json",
-  "version": "1.0.8-joneshf-testing-osx",
+  "version": "1.0.8-joneshf-testing-osx-2",
   "description": "NPM package for dhall-json",
   "bin": {
     "dhall-to-json": "bin/dhall-to-json",
