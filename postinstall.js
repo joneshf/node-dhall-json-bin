@@ -4,7 +4,7 @@ var BinWrapper = require('bin-wrapper');
 var path = require('path');
 var packageJSON = require('./package.json');
 
-var base = 'https://github.com/joneshf/dhall-json/releases/download/';
+var base = 'https://github.com/dhall-lang/dhall-json/releases/download/';
 
 var binary = new BinWrapper({skipCheck: true})
   .src(base + packageJSON.version + '/osx.tar.gz', 'darwin')
